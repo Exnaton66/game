@@ -12,9 +12,9 @@ public class Rocket {
     public int getY(){
         return y;
     }
-    private static int y=450;
+    private int y=450;
 
-    public static void moveV(){
+    public void moveV(){
         if (y!=-10)
             y--;
     }

@@ -23,17 +23,12 @@ public class Bg extends JPanel implements ActionListener{
         mainTimer.start();
     }
 
-    public void paint (Graphics g) {
+    public void paint(Graphics g) {
         g.drawImage(img, 0, 0, null);
-        g.drawImage(rock.img,Game.posYR+41,rock.getY(), null);
-        g.drawImage(gun.img,Game.posYR,450, null);
-        g.drawImage(n.img,n.x,n.y,null);
+        g.drawImage(rock.img, Game.posYR + 41, Game.rocketYPosition, null);
+        g.drawImage(gun.img, Game.posYR, 450, null);
+        g.drawImage(n.img, n.x, n.y, null);
     }
-
-
-
-
-
 
     @Override
     public void actionPerformed(ActionEvent e) {
